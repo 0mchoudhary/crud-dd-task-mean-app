@@ -34,7 +34,7 @@ The application will be available at `http://localhost`.
 ---
 
 ## 🔄 CI/CD Pipeline
-The pipeline is triggered on every push to `main` or `dev` branches.
+The pipeline is triggered on every push to `main`branches.
 
 **Steps included:**
 1. **Build**: Creates Docker images for both frontend and backend.
@@ -50,20 +50,17 @@ The pipeline is triggered on every push to `main` or `dev` branches.
 ## 📸 Screenshots
 
 ### 1. CI/CD Configuration & Execution
-*(Screenshot showing the GitHub Actions workflow file or the successful run history)*
 ![CI/CD Execution](assets/screenshots/cicd-execution.png)
 
 ### 2. Docker Image Build & Push
-*(Screenshot of Docker Hub repository or GitHub Action logs showing the push)*
-![Docker Hub Push](assets/screenshots/docker-push.png)
+![Docker Hub Push](assets/screenshots/docker-hub.png)
 
 ### 3. Application Deployment & UI
-*(Screenshot of the application running on the VM's public IP)*
-![App Working UI](assets/screenshots/app-ui.png)
+![App Working UI](assets/screenshots/app-view.png)
 
 ### 4. Infrastructure & Nginx
-*(Screenshot showing running containers on the VM or Nginx configuration logs)*
-![Infrastructure](assets/screenshots/infra-status.png)
+
+![Infrastructure](assets/screenshots/ec2-status.png)
 
 ---
 
