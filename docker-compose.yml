@@ -7,7 +7,7 @@ services:
       - mongo-data:/data/db
 
   backend:
-    image: imomchoudhary/crud-dd-task-mean-app-backend:latest
+    image: imomchoudhary/crud-dd-task-mean-app-backend:${IMAGE_TAG:-latest}
     # build: ./backend
     ports:
       - "8080:8080"
@@ -19,7 +19,7 @@ services:
       - mongodb
 
   frontend:
-    image: imomchoudhary/crud-dd-task-mean-app-frontend:latest
+    image: imomchoudhary/crud-dd-task-mean-app-frontend:${IMAGE_TAG:-latest}
     # build: ./frontend
     ports:
       - "80:80"
