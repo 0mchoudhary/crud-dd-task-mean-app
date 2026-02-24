@@ -7,8 +7,8 @@ services:
       - mongo-data:/data/db
 
   backend:
-    image: imomchoudhary/crud-dd-task-mean-app-backend:${TAG:-v2.0}
-    build: ./backend
+    image: imomchoudhary/crud-dd-task-mean-app-backend:latest
+    # build: ./backend
     ports:
       - "8080:8080"
     environment:
@@ -19,8 +19,8 @@ services:
       - mongodb
 
   frontend:
-    image: imomchoudhary/crud-dd-task-mean-app-frontend:${TAG:-v2.0}
-    build: ./frontend
+    image: imomchoudhary/crud-dd-task-mean-app-frontend:latest
+    # build: ./frontend
     ports:
       - "80:80"
     depends_on:
