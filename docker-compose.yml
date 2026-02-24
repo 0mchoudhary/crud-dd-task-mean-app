@@ -7,19 +7,19 @@ services:
       - mongo-data:/data/db
 
   backend:
-    image: imomchoudhary/crud-dd-task-mean-app-backend:latest
+    image: imomchoudhary/crud-dd-task-mean-app-backend:${TAG:-v1.0}
     build: ./backend
     ports:
       - "8080:8080"
     environment:
       - DB_URL=mongodb://mongodb:27017/dd_db
       - PORT=8080
-      - CORS_ORIGIN=http://localhost:8081
+      - CORS_ORIGIN=http://localhost:80
     depends_on:
       - mongodb
 
   frontend:
-    image: imomchoudhary/crud-dd-task-mean-app-frontend:latest
+    image: imomchoudhary/crud-dd-task-mean-app-frontend:${TAG:-v1.0}
     build: ./frontend
     ports:
       - "80:80"
